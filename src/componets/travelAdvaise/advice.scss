@@ -1,0 +1,112 @@
+@import "./src/index.scss";
+
+.travel_advice {
+    padding-top: 70px;
+
+    // h2 {
+    //     text-align: center;
+    //     margin-bottom: 20px;
+    //     font-weight: bold;
+    //     text-transform: uppercase;
+
+    //     display: table;
+    //     width: auto;
+    //     margin: 15px auto;
+    //     letter-spacing: 2px;
+    //     color: #154ffb;
+    //     z-index: 10;
+    //     position: relative;
+
+    //     &::before {
+    //         content: "";
+    //         position: absolute;
+    //         top: -50%;
+    //         left: -25px;
+    //         z-index: -1;
+    //         background: coral;
+    //         width: 50px;
+    //         height: 50px;
+    //         border-radius: 50%;
+    //       }
+        
+       
+    // }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        
+        position: relative;
+        display: table;
+        width: auto;
+        margin: 0 auto 45px;
+        letter-spacing: 2px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -25px;
+            width: 30px;
+            height: 20px;
+            border-top: 2px solid coral;
+            border-left: 2px solid coral;
+          }
+
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: -50%;
+            right: -25px;
+            width: 30px;
+            height: 20px;
+            border-bottom: 2px solid coral;
+            border-right: 2px solid coral;
+          }
+        
+       
+    }
+
+    .background_mount {
+        height: 2000px;
+    }
+    img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+
+    }
+    .advice_blog {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    
+        padding-bottom: 70px;
+    }
+
+    .advice_card {
+        box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.7);
+        background-color: rgb(238, 236, 235);
+        padding: 10px 15px;
+        width: 60%;
+        // height: 200px;
+       
+        &_left {
+            align-self: flex-start;
+        }
+
+        &_right {
+            align-self: flex-end;
+        }
+
+        .advice_card_number {
+            float: left;
+            color: rgb(9, 19, 15);
+            // font
+        }
+    }
+
+}
+

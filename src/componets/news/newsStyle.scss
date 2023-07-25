@@ -1,0 +1,112 @@
+@import "./src/index.scss";
+
+.section_news {
+    padding: 70px 0;
+
+   
+        // h2 {
+        //     font-weight: bold;
+        //     // font-size: 28px;
+        //     color: black;
+        //     text-align: center;
+        //     // margin-bottom: 30px;
+        //     text-transform: uppercase;
+  
+  
+        //     position: relative;
+        //   display: table;
+        //   width: auto;
+        //   margin: 0 auto 45px;
+        //   letter-spacing: 2px;
+  
+        //   &::before {
+        //       content: "";
+        //       position: absolute;
+        //       top: -50%;
+        //       left: -25px;
+        //       width: 30px;
+        //       height: 20px;
+        //       border-top: 2px solid coral;
+        //       border-left: 2px solid coral;
+        //     }
+  
+        //     &:after {
+        //       content: "";
+        //       position: absolute;
+        //       bottom: -50%;
+        //       right: -25px;
+        //       width: 30px;
+        //       height: 20px;
+        //       border-bottom: 2px solid coral;
+        //       border-right: 2px solid coral;
+            // }
+    // }
+
+    .news_list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 40px;
+
+    .news_article {
+        // border: 1px solid #777;
+        // border-radius: 8px;
+        background-color: white;
+        width: 100%;
+        position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .news_article_source {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        color: white;
+        position: absolute;
+          top: 0;
+          left: 8px;
+          transform: translateY(-50%);
+          background-color: coral;
+          padding: 5px 8px;
+          border-radius: 5px;
+      }
+
+      .article_content {
+        padding: 15px 15px 30px;
+
+      }
+
+      h3 {
+        color: #070707;
+        text-align: center;
+      }
+
+    .home_destinations_item_heading {
+      width: 100%;
+      height: 250px;
+      margin-bottom: 40px;
+      
+      
+    }
+    .home_destinations_item_descripton {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .home_destinations_item_btn {
+      text-align: end;
+    }
+  }
+
+
+    }
+    
+    
+
+
+}

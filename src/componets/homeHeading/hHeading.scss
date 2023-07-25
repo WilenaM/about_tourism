@@ -1,0 +1,89 @@
+@import "./src/index.scss";
+
+@mixin font-header($weight, $size, $height, $color) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+  }
+
+  @keyframes colorChange {
+      from {
+          background-color: transparent;
+          border-color: white;
+      }
+      to {
+        background-color: coral;
+        border-color: coral;
+      }
+      
+  }
+
+.home_heading {
+    // margin-top: 90px;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    
+    .video-wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        video {
+        min-width: 100%;
+        min-height: 100%; 
+        object-fit: cover;  
+        }
+    }
+
+    .heading_content {
+        position: absolute;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center ;
+        top: 0;
+    left: 0;
+    // transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.4);
+    .heading_overlay_title {
+        @include font-header (600, 52px, 64px, white);
+        letter-spacing: 0.1rem;
+        margin-bottom: 40px;
+        @include appearTopAnim(1000ms);
+      }
+      .heading_overlay_caption {
+        @include font-header (400, 28px, 36px, white);
+        margin-bottom: 40px;
+        @include appearTopAnim(1000ms);
+      }
+    }
+
+    .heading_overlay_btnwrap {
+        display: flex;
+        justify-content: center;
+        // width: 300px;
+        @include appearBottomAnim(1000ms);
+
+        .heading_overlay-btn {
+            padding: 15px 25px;
+            @include font-header (500, 20px, 20px, white);
+            border: 2px solid white;
+
+            &:hover {
+                background-color: coral;
+                border-color: coral;
+                animation: colorChange 400ms ease-in-out forwards;
+            }
+        }
+    }
+}
