@@ -41,17 +41,18 @@ function TravelAdvice() {
         }}>
             <h2>TRAVEL ADVICE</h2>
             <div className="container">
-                <div className="advice_blog" >
+                <ol className="advice_blog" >
                {
                    advices.map((advice,index) => (
-                    <div key={index} className={`advice_card ${index%2 === 0 ? 'advice_card_left' : 'advice_card_right' }`}>
-                        <div className="advice_card_number">{index+1}</div>
-                        <h3 className="advice_card_title">{advice.title}</h3>
-                        <p className="advice_card_text">{advice.text}</p>
-                    </div>
+                    <li key={index} className={`advice_card ${index%2 === 0 ? 'advice_card_left' : 'advice_card_right' }`}>
+                        <div className="advice_card_number"></div>
+
+                        <h3 className="advice_card_title lugrasimo">{advice.title}</h3>
+                        <p className="advice_card_text lugrasimo">{advice.text}</p>
+                    </li>
                    ))
                }
-                </div>
+                </ol>
             </div>
         </section>
     )

@@ -22,7 +22,7 @@ code {
   font-family: 'Montserrat', sans-serif;
 }
 
-.lugrasimo {
+.lugrasimo  {   //для тексту
   font-family: 'Lugrasimo', serif;
 }
 
@@ -34,7 +34,7 @@ code {
   color: coral;
   text-decoration: none;
   font-size: 18px;
-
+  font-family: 'Pacifico', sans-serif;
 }
 
 .learn_more:hover {
@@ -112,7 +112,7 @@ h2  {
   color: black;
   text-align: center;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 40px;
 
 
 
@@ -127,8 +127,8 @@ letter-spacing: 2px;
     position: absolute;
     top: -15px;
     left: -25px;
-    width: 30px;
-    height: 20px;
+    width: 50px;
+    height: 30px;
     border-top: 3px solid coral;
     border-left: 3px solid coral;
   }
@@ -138,8 +138,8 @@ letter-spacing: 2px;
     position: absolute;
     bottom: -15px;
     right: -25px;
-    width: 30px;
-    height: 20px;
+    width: 50px;
+    height: 30px;
     border-bottom: 3px solid coral;
     border-right: 3px solid coral;
   }
