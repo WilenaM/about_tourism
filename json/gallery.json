@@ -1,0 +1,31 @@
+{
+    "heading": {
+        "img": "/images/italy_headin.jpeg",
+        "title": "Gallery",
+        "caption": "Collection of pictures taked on my phone."
+      },
+    "images":[
+    {
+        "original": "/images/berlin.jpg",
+        "thumbnail": "/images/berlin.jpg",
+        "alt": "Berlin Arc",
+        "gridWidth": "",
+        "gridHeight": ""
+       },
+       {
+        "original": "/images/brugge.jpg",
+        "thumbnail": "/images/brugge.jpg",
+        "alt": "Brigge"
+       },
+       {
+        "original": "/images/firenze.jpg",
+        "thumbnail": "/images/firenze.jpg",
+        "alt": "firenze"
+       },
+       {
+        "original": "/images/Italy_banner.jpg",
+        "thumbnail": "/images/Italy_banner.jpg",
+        "alt": "Firenze",
+        "gridHeight": "span 2"
+       }
+]}

@@ -1,0 +1,24 @@
+{
+  "heading": {
+    "img": "/images/verh_about.jpg",
+    "title": "Hey there!",
+    "caption": "Travel Blogging: Journey Through the World, One Story at a Time"
+  },
+  "about": {
+    "biography": {
+      "title": "Biographies",
+      "text": "Hey there! I'm Kristina, a globe-trotting travel blogger on a never-ending quest to uncover the wonders of this beautiful planet.",
+      "img": "/images/dvaself.jpg"
+    },
+    "myself": {
+      "title": "About Myself",
+      "text": [
+        "Welcome I'm <strong>Kristina</strong>, a digital diary of my globetrotting adventures and cultural explorations. Join me as I traverse the world's landscapes, from hidden gems to iconic landmarks, and share the moments that have left an indelible mark on my soul.",
+        "Through vivid narratives and captivating visuals, I aim to transport you to enchanting destinations and offer a glimpse into the diverse tapestry of our planet. Whether I'm wandering through ancient streets, indulging in local delicacies, or connecting with fellow wanderers, every entry is a chapter in my quest to embrace the beauty of our shared world.",
+        "But my blog is more than just a chronicle of my travels; it's a platform for discovery and connection. Dive into insightful travel tips, immerse yourself in the rich fabric of global cultures, and let the pages of this blog inspire your own journeys, near or far.",
+        "So, fasten your seatbelts and let's embark on this exciting odyssey together. Adventure awaits, and I can't wait to have you join me on the road less traveled.",
+        "Bon voyage,<br><strong>Kristina</strong>"
+      ]
+    }
+  }
+}
