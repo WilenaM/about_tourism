@@ -1,6 +1,6 @@
 {
   "heading": {
-    "img": "/images/verh_about.jpg",
+    "img": "images/verh_about.jpg",
     "title": "Hey there!",
     "caption": "Travel Blogging: Journey Through the World, One Story at a Time"
   },
@@ -8,7 +8,7 @@
     "biography": {
       "title": "Biographies",
       "text": "Hey there! I'm Kristina, a globe-trotting travel blogger on a never-ending quest to uncover the wonders of this beautiful planet.",
-      "img": "/images/dvaself.jpg"
+      "img": "images/dvaself.jpg"
     },
     "myself": {
       "title": "About Myself",

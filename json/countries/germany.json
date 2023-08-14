@@ -1,12 +1,12 @@
 {
     "heading": {
-        "img": "/images/country/germany/germany.jpg",
+        "img": "images/country/germany/germany.jpg",
         "title": "Germany",
         "caption": "This is a world travel blog featuring beautiful destinations, new experiences, and hidden places around the world."
     },
     "summary": {
         "countryName": "Germany",
-        "countryImg": "/images/country/germany/berlin2.jpeg",
+        "countryImg": "images/country/germany/berlin2.jpeg",
         "descriptionCountry": "Germany, nestled in the heart of Europe, is a nation of captivating contrasts. Its landscapes are a blend of medieval charm and modern innovation, with historic castles standing tall beside cutting-edge architectural marvels. The country's cultural contributions span centuries, from the works of classical composers to contemporary art galleries. Germany's natural beauty ranges from the serenity of the Black Forest to the majestic splendor of the Bavarian Alps. Culinary delights encompass traditional sausages and hearty dishes, as well as a thriving beer culture. The spirit of innovation is evident in its technological advancements and commitment to sustainability. Festivals like Oktoberfest and Christmas markets celebrate tradition and community, while warm hospitality invites travelers to immerse themselves in local culture. Germany's ability to seamlessly blend its rich history with its progressive spirit creates a captivating destination where past and present converge in a harmonious symphony of experiences.",
         "lon": "35.2257626",
         "lat": "31.7788242"
@@ -16,7 +16,7 @@
             "id": "deutschland-sum",
             "title": "Summary",
             "mainImg": {
-                "src": "/images/country/germany/berlin4.jpg",
+                "src": "images/country/germany/berlin4.jpg",
                 "alt": "Germany flag"
             },
             "paragraphs": [
@@ -41,19 +41,19 @@
             ],
             "gridImages": [
                 {
-                    "src": "/images/country/germany/berlin1.jpeg",
+                    "src": "images/country/germany/berlin1.jpeg",
                     "alt": "Berlin1"
                 },
                 {
-                    "src": "/images/country/germany/berlin3.jpeg",
+                    "src": "images/country/germany/berlin3.jpeg",
                     "alt": "berlin3"
                 },
                 {
-                    "src": "/images/country/germany/berlin8.jpg",
+                    "src": "images/country/germany/berlin8.jpg",
                     "alt": "berlin8"
                 },
                 {
-                    "src": "/images/country/germany/berlin11.jpg",
+                    "src": "images/country/germany/berlin11.jpg",
                     "alt": "berlin11"
                 }
             ]

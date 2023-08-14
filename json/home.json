@@ -1,6 +1,6 @@
 {
     "heading": {
-        "video": "/images/bgVideo.mp4",
+        "video": "images/bgVideo.mp4",
         "title": "EXPLORE. DREAM. DISCOVER.",
         "caption": "This is a world travel blog featuring beautiful destinations, new experiences, and hidden places around the world.",
         "button": {
@@ -11,35 +11,35 @@
 
     "homeDestinations": [
         {
-          "img": "/images/firenze.jpg",
+          "img": "images/firenze.jpg",
           "title": "Italy",
           "description":
             "The href attribute is required for an anchor to be keyboard accessible...",
-          "link": "/destinations/italy"
+          "link": "destinations/italy"
         },
       
         {
-          "img": "/images/jerusalem.jpg",
+          "img": "images/jerusalem.jpg",
           "title": "Israel",
           "description":
             "The href attribute is required for an anchor to be keyboard accessible...",
-          "link": "/destinations/israel"
+          "link": "destinations/israel"
         },
       
         {
-          "img": "/images/brugge.jpg",
+          "img": "images/brugge.jpg",
           "title": "Belgium",
           "description":
             "The href attribute is required for an anchor to be keyboard accessible...",
-          "link": "/destinations/belgium"
+          "link": "destinations/belgium"
         },
       
         {
-          "img": "/images/berlin.jpg",
+          "img": "images/berlin.jpg",
           "title": "Germany",
           "description":
             "The href attribute is required for an anchor to be keyboard accessible...",
-          "link": "/destinations/germany"
+          "link": "destinations/germany"
         }
       ]
 }

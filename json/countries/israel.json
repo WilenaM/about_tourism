@@ -1,12 +1,12 @@
 {
     "heading": {
-        "img": "/images/country/israel/heading_israel.jpg",
+        "img": "images/country/israel/heading_israel.jpg",
         "title": "Israel",
         "caption": "This is a world travel blog featuring beautiful destinations, new experiences, and hidden places around the world."
     },
     "summary": {
         "countryName": "Israel",
-        "countryImg": "/images/country/israel/israel4.jpeg",
+        "countryImg": "images/country/israel/israel4.jpeg",
         "descriptionCountry": "Nestled at the crossroads of history, Israel is a nation where ancient stories blend seamlessly with modern innovation. From the sun-soaked beaches of Tel Aviv to the timeless beauty of Jerusalem's Old City, every corner unveils a layer of its rich and diverse tapestry. Discover the spiritual heart of three major religions as you stand before the Western Wall, the Church of the Holy Sepulchre, and the Dome of the Rock. Wander through bustling markets where fragrant spices and vibrant textiles create a sensory symphony. Beyond its religious significance, Israel is a haven for nature enthusiasts. The serene waters of the Dead Sea invite you to float effortlessly, while the rugged landscapes of the Negev Desert and the lush greenery of the Golan Heights offer adventurous escapes. Sample a medley of flavors as you indulge in mouthwatering falafel, hummus, and shawarma. Experience the warmth of Israeli hospitality as locals share stories that unveil the essence of their land. Israel's ability to balance its ancient past with its innovative future makes it a captivating destination that invites you to explore its multifaceted identity.",
         "lon": "35.2257626",
         "lat": "31.7788242"
@@ -16,7 +16,7 @@
             "id": "israel-sum",
             "title": "Summary",
             "mainImg": {
-                "src": "/images/country/israel/israel3.jpg",
+                "src": "images/country/israel/israel3.jpg",
                 "alt": "Italy Flag"
             },
             "paragraphs": [
@@ -37,19 +37,19 @@
             ],
             "gridImages": [
                 {
-                    "src": "/images/country/israel/is1.jpg",
+                    "src": "images/country/israel/is1.jpg",
                     "alt": "Coleseo"
                 },
                 {
-                    "src": "/images/country/israel/is2.jpg",
+                    "src": "images/country/israel/is2.jpg",
                     "alt": "Firenze"
                 },
                 {
-                    "src": "/images/country/israel/is3.jpg",
+                    "src": "images/country/israel/is3.jpg",
                     "alt": "Pisa"
                 },
                 {
-                    "src": "/images/country/israel/is4.jpg",
+                    "src": "images/country/israel/is4.jpg",
                     "alt": "Venice"
                 }
             ]
@@ -58,7 +58,7 @@
             "id": "italy-kitchen",
             "title": "Kitchen",
             "mainImg": {
-                "src": "/images/country/israel/is_cucina4.jpg.webp",
+                "src": "images/country/israel/is_cucina4.jpg.webp",
                 "alt": "Spaghetti and meatballs"
             },
             "paragraphs": [
@@ -83,22 +83,22 @@
             ],
             "gridImages": [
                 {
-                    "src": "/images/country/israel/is_cucina6.jpg",
+                    "src": "images/country/israel/is_cucina6.jpg",
                     "alt": "eggs"
                 },
                 {
-                    "src": "/images/country/israel/is_cucina1.jpg",
+                    "src": "images/country/israel/is_cucina1.jpg",
                     "alt": "Pizza",
                     "gridHeight": "span 2"
                 },
                 {
-                    "src": "/images/country/israel/is_cucina7.jpg",
+                    "src": "images/country/israel/is_cucina7.jpg",
                     "alt": "Antipasti",
                     "gridWidth": "span 2",
                     "gridHeight": "span 2"
                 },
                 {
-                    "src": "/images/country/israel/is_cucina8.jpg",
+                    "src": "images/country/israel/is_cucina8.jpg",
                     "alt": "Gelato"
                 }
             ]
