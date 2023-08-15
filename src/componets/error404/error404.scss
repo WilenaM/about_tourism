@@ -1,0 +1,96 @@
+svg#freepik_stories-404-error:not(.animated) .animable {
+  opacity: 0;
+}
+
+svg#freepik_stories-404-error.animated
+#freepik--404--inject-15 {
+  animation: 2.0s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) fadeIn;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-404-error.animated
+#freepik--Planets--inject-15 {
+  animation: 2.0s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) fadeIn;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-404-error.animated
+#freepik--Astronaut--inject-15 {
+  animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideLeft;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-404-error.animated
+#freepik--Rocket--inject-15 {
+  animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideLeft;
+  animation-delay: 0s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30 px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.error_page {
+  .error_flex {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    max-height: 800px;
+
+    .error_wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      svg {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    .error_message {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+
+      .error_title {
+        font-size: 50px;
+        font-weight: 800;
+        line-height: 60px;
+        letter-spacing: 0.1em;
+        color: coral;
+      }
+
+      .error_message_text {
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        color: coral;
+      }
+    }
+  }
+  .black_bg{
+    height: 90px;
+    background-color: #070707;
+    width: 100%;
+  }
+}
+

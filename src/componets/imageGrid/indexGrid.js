@@ -4,13 +4,15 @@ function ImageGrid(props) {
     return (
       <div className="grid_img_wrap" style={{
           display:"grid",
-          gridTemplateColumns: `repeat(${props.colsCount || 4}, 1fr)`,
-          gridTemplateRows: '1fr'
+          gridTemplateColumns: `repeat(${props.colsCount || 4}, 1fr)`
       }}>
         {
-            props.images.map(image => (
-                <div className='grid_img_item' style={{gridColumn: image.gridWidth, gridRow: image.gridHeight}}>
-                    <img src={image.src} alt={image.alt} ></img>
+            props.images.map((image, index) => (
+                <div key={index}
+                 className='grid_img_item'
+                  style={{gridColumn: image.gridWidth || '', gridRow: image.gridHeight || ''}} 
+                  onClick = {props.click || '' }>
+                    <img data-id={index} src={image.src || image.original} alt={image.alt} ></img>
                 </div>
             ))
         }  

@@ -1,16 +1,30 @@
 import HomeHeading from "../componets/homeHeading";
-import WhyChoose from "../componets/whyChoose/whyChoose";
-import HomeDestinations from "../componets/homeDestinations/homeDestinations"; 
-import TravelAdvice from "../componets/travelAdvaise/travAdvice";
-import NewsTourism from "../componets/news/news";
-
-
+import DestinSummary from "../componets/destinSummary/destinSummary";
+import DestinationsList from "../componets/destinList/destinList";
+import { useState,useEffect } from "react";
+ 
 
 function Destinations() {
+  const [data, setData] = useState({
+    heading: {},
+    destinations: [],
+  })
+
+  useEffect(() => {
+    fetch(`json/destinations.json`)
+      .then(resp => resp.json())
+      .then(resp => {
+        console.log(resp)
+        setData(resp);
+      })
+  }, [])
     return (
         <main className="destinations">
-        <HomeHeading />
-        <HomeDestinations />
+        <HomeHeading {...data.heading}/>
+        <DestinSummary/>
+        {data.destinations.map((item) => (
+          <DestinationsList key={item.id} {...item}/>
+        ))}
       </main>
     )
 }

@@ -1,0 +1,53 @@
+{
+    "heading": {
+        "img": "images/lupa.jpg",
+        "title": "Gallery",
+        "caption": "Collection of pictures taked on my phone."
+      },
+    "images":[
+    {
+        "original": "images/gallery/foto1.webp",
+        "thumbnail": "images/gallery/foto1.webp",
+        "alt": "travel"
+       },
+       {
+        "original": "images/gallery/foto2.webp",
+        "thumbnail": "images/gallery/foto2.webp",
+        "alt": "travel"
+       },
+       {
+        "original": "images/gallery/foto3.webp",
+        "thumbnail": "images/gallery/foto3.webp",
+        "alt": "travel"
+       },
+       {
+        "original": "images/gallery/foto4.webp",
+        "thumbnail": "images/gallery/foto4.webp",
+        "alt": "travel"
+       },
+       {
+        "original": "images/gallery/foto5.webp",
+        "thumbnail": "images/gallery/foto5.webp",
+        "alt": "travel"
+       },
+       {
+        "original": "images/gallery/foto7.webp",
+        "thumbnail": "images/gallery/foto7.webp",
+        "alt": "travel"
+       },
+       {
+        "original": "images/gallery/foto8.webp",
+        "thumbnail": "images/gallery/foto8.webp",
+        "alt": "travel"
+       },
+       {
+        "original": "images/gallery/foto9.webp",
+        "thumbnail": "images/gallery/foto9.webp",
+        "alt": "travel"
+       },
+       {
+        "original": "images/gallery/foto10.webp",
+        "thumbnail": "images/gallery/foto10.webp",
+        "alt": "travel"
+       }
+]}

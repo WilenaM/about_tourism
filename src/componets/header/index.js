@@ -1,83 +1,89 @@
 import logo from "../../assets/images/travel-logo.svg";
 import "./header.scss";
 import React from "react";
-import "./hamburger.css"
+import "./hamburger.css";
+import {NavLink, Link} from "react-router-dom";
 
 function Header() {
   const [width, setWidth] = React.useState(window.innerWidth);
+  const [offsetTop, setOffsetTop] = React.useState(0);
   const [isHambActive, setIsHambActive] = React.useState(false)
   const breakpoint = 900;
   React.useEffect(() => {
     const handleWidth = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleWidth);
-    // return () => {
-    //     window.removeEventListener("resize", handleResizeWindow);
-    // }
+    const onScroll = () => setOffsetTop(window.pageYOffset);
+        // clean up code
+        window.removeEventListener('scroll', onScroll);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener("resize", handleWidth);
+    return () => {
+        window.removeEventListener("resize", handleWidth);
+        window.removeEventListener('scroll', onScroll);
+    }
   });
   const clickHandler = (event) => {
         setIsHambActive(!isHambActive);
   }
 
   return (
-    <header>
+    <header style={offsetTop < 640 ? {
+      position:  "absolute",
+      height: "90px"
+
+    } : {
+      position:  "fixed",
+      backgroundColor: "#070707",
+      height: "60px",
+      animation: "expandVert 300ms ease-in forwards",
+      transformOrigin: "top"
+    }}>
       <div className="container">
         <div className="logo_wrap">
-          <a href="/">
+          <Link to="/">
             <img src={logo} alt="logo" />
-          </a>
+          </Link>
         </div>
         {width >= breakpoint ? (
           <nav className="header_navigation montserat_text">
             <ul className="neader_menu_nav">
               <li className="menu_nav_li">
-                <a className="menu_nav_a" href="/">
+                <NavLink className="menu_nav_a" to="/">
                   Home
-                </a>
+                </NavLink>
               </li>
               <li className="menu_nav_li drop_menu_li">
-                <a className="menu_nav_a" href="/destinations">
+                <NavLink className="menu_nav_a" to="/destinations">
                   Destinations
-                </a>
+                </NavLink>
                 <ul className="drop_menu">
                 <li>
-                    <a href="/destinations/belgium">Italy</a>
+                    <NavLink to="/destinations/italy">Italy</NavLink>
                   </li>
                   <li>
-                    <a href="/destinations/belgium">Belgium</a>
+                    <NavLink to="/destinations/belgium">Belgium</NavLink>
                   </li>
                   <li>
-                    <a href="/destinations/israel">Israel</a>
+                    <NavLink to="/destinations/israel">Israel</NavLink>
                   </li>
                   <li>
-                    <a href="/destinations/germany">Germany</a>
+                    <NavLink to="/destinations/germany">Germany</NavLink>
                   </li>
                 </ul>
               </li>
               <li className="menu_nav_li drop_menu_li">
-                <a className="menu_nav_a" href="/gallery">
+                <NavLink className="menu_nav_a" to="/gallery">
                   My gallery
-                </a>
-                <ul className="drop_menu">
-                  <li>
-                    <a href="/gallery#nature">Nature</a>
-                  </li>
-                  <li>
-                    <a href="/gallery#kitchen">Kitchen</a>
-                  </li>
-                  <li>
-                    <a href="/gallery#architecture">Architectura</a>
-                  </li>
-                </ul>
+                </NavLink>
               </li>
               <li className="menu_nav_li">
-                <a className="menu_nav_a" href="/about">
+                <NavLink className="menu_nav_a" to="/about">
                   About
-                </a>
+                </NavLink>
               </li>
               <li className="menu_nav_li">
-                <a className="menu_nav_a" href="/contacts">
+                <NavLink className="menu_nav_a" to="/contacts">
                   Contacts
-                </a>
+                </NavLink>
               </li>
             </ul>
           </nav>
@@ -98,30 +104,30 @@ function Header() {
             </div>
             { isHambActive ? ( <nav className="hamb_menu_nav montserat_text">
             <ul className="hamb_menu_nav_ul ">
-              <li className="hamb_menu_nav_li">
-                <a className="hamb_menu_nav_a" href="/">
+              <li onClick={clickHandler} className="hamb_menu_nav_li">
+                <Link className="hamb_menu_nav_a" to="/">
                   Home
-                </a>
+                </Link>
               </li>
-              <li className="hamb_menu_nav_li">
-                <a className="hamb_menu_nav_a" href="/destinations">
+              <li onClick={clickHandler} className="hamb_menu_nav_li">
+                <Link className="hamb_menu_nav_a" to="/destinations">
                   Destinations
-                </a>
+                </Link>
               </li>
-              <li className="hamb_menu_nav_li">
-                <a className="hamb_menu_nav_a" href="/gallery">
+              <li onClick={clickHandler} className="hamb_menu_nav_li">
+                <Link className="hamb_menu_nav_a" to="/gallery">
                   My gallery
-                </a>
+                </Link>
               </li>
-              <li className="hamb_menu_nav_li">
-                <a className="hamb_menu_nav_a" href="/about">
+              <li onClick={clickHandler} className="hamb_menu_nav_li">
+                <Link className="hamb_menu_nav_a" to="/about">
                   About
-                </a>
+                </Link>
               </li>
-              <li className="hamb_menu_nav_li">
-                <a className="hamb_menu_nav_a" href="/contacts">
+              <li onClick={clickHandler} className="hamb_menu_nav_li">
+                <Link className="hamb_menu_nav_a" to="/contacts">
                   Contacts
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>) : ''}

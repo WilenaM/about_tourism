@@ -1,0 +1,64 @@
+@keyframes appearTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appearBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appearLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appearRight {
+ 0% {
+   transform: translateX(100%);
+   opacity: 0;
+ }
+
+ 100% {
+  transform: translateX(0%);
+   opacity: 1;
+ }
+}
+
+@mixin appearLeftAnim($time_ms) {
+  animation: appearLeft $time_ms ease-in-out forwards;
+}
+
+@mixin appearRightAnim($time_ms){
+  animation: appearRight $time_ms ease-in-out forwards;
+  
+}
+
+@mixin appearTopAnim ($time_ms) {
+  animation: appearTop $time_ms ease-in-out forwards;
+}
+
+@mixin appearBottomAnim ($time_ms) {
+  animation: appearBottom $time_ms ease-in-out forwards;
+}

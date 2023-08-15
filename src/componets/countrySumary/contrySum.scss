@@ -1,0 +1,63 @@
+.countrys_summmary {
+    padding: 70px 0;
+    position: relative;
+
+    .countrys_name_descriptions {
+        display: grid;
+        grid-template-columns: 2fr 3fr 1fr;
+        gap: 30px;
+
+        h2 {
+
+            text-transform: uppercase;
+        }
+
+        .country_title {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            padding: 99px 15px 0;
+            
+
+        }
+
+        .weather_wrapp {
+            display: flex;
+            justify-content: flex-end;
+
+            .weather_widget {
+                padding: 15px;
+                border: 1px solid coral;
+                height: fit-content;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .countrys_summmary {
+        .countrys_name_descriptions {
+            display: block;
+            .country_title {
+                float: left;
+                width: 30%;
+                margin-right: 30px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .weather_wrapp {
+                margin-top: 20px;
+                justify-content: center;
+            }
+        }
+    }
+}

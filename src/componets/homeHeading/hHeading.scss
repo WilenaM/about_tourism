@@ -5,6 +5,7 @@
     font-size: $size;
     line-height: $height;
     color: $color;
+    
   }
 
   @keyframes colorChange {
@@ -33,6 +34,19 @@
         align-items: center;
         overflow: hidden;
         video {
+        min-width: 100%;
+        min-height: 100%; 
+        object-fit: cover;  
+        }
+    }
+    .img-wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        img {
         min-width: 100%;
         min-height: 100%; 
         object-fit: cover;  
@@ -85,5 +99,59 @@
                 animation: colorChange 400ms ease-in-out forwards;
             }
         }
+    }
+
+    .ukraine {
+        position: absolute;
+        bottom: 30px;
+        right: 40px;
+        z-index: 10;
+        a {
+            padding: 0 15px;
+            display: flex;
+            align-items: center;
+            &:hover {
+                // background-color: rgb(102, 211, 238);
+                // text-shadow: -1px 0 rgb(54, 201, 238), 0 1px rgb(54, 201, 238), 1px 0 rgb(54, 201, 238), 0 -1px rgb(54, 201, 238);
+                text-shadow: -1px 0 #070707, 0 1px #070707, 1px 0 #070707, 0 -1px #070707;
+            }
+        }
+
+        img {
+            height: 50px;
+            width: 50px;
+            margin-right: 15px;
+        }
+
+        span {
+            font-weight: bold;
+            font-size: 28px;
+            color: white;
+        }
+        &:hover {
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                background-color: #0e63f1;
+                height: 50%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                background-color: #ffce2e;
+                height: 50%;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+            }
+        }
+        
     }
 }

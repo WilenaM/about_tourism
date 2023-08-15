@@ -1,0 +1,71 @@
+{
+    "heading": {
+        "video": "images/bgVideo.mp4",
+        "title": "EXPLORE. DREAM. DISCOVER.",
+        "caption": "This is a world travel blog featuring beautiful destinations, new experiences, and hidden places around the world.",
+        "button": {
+          "text": "START EXPLORING",
+          "href": "/destinations/"
+        }
+      },
+
+    "homeDestinations": [
+        {
+          "img": "images/firenze.jpg",
+          "title": "Italy",
+          "description":
+            "The href attribute is required for an anchor to be keyboard accessible...",
+          "link": "destinations/italy"
+        },
+      
+        {
+          "img": "images/jerusalem.jpg",
+          "title": "Israel",
+          "description":
+            "The href attribute is required for an anchor to be keyboard accessible...",
+          "link": "destinations/israel"
+        },
+      
+        {
+          "img": "images/brugge.jpg",
+          "title": "Belgium",
+          "description":
+            "The href attribute is required for an anchor to be keyboard accessible...",
+          "link": "destinations/belgium"
+        },
+      
+        {
+          "img": "images/berlin.jpg",
+          "title": "Germany",
+          "description":
+            "The href attribute is required for an anchor to be keyboard accessible...",
+          "link": "destinations/germany"
+        }
+      ],
+      "advices": [
+        {
+            "title":"Explore local traditions and customs:",
+            "text": "Before traveling, familiarize yourself with the culture and traditions of the destination country. Respect the local customs to better understand the local people and create harmonious relationships."
+        },
+    
+        {
+            "title":"Book accommodation in advance:",
+            "text": "Popular places and good hotels fill up quickly, especially during peak seasons. Book your accommodation in advance to avoid any issues with lodging."
+        },
+    
+        {
+            "title":"Create backups of documents:",
+            "text": "Scan and save electronic copies of important documents such as passports, visas, insurance, and tickets. Also, keep physical copies in a separate place from the originals."
+        },
+    
+        {
+            "title":"Prioritize safety:",
+            "text": "Keep your valuables and money in secure places, avoid displaying expensive jewelry or gadgets overtly."
+        },
+    
+        {
+            "title":"Be polite and smile:",
+            "text": "A smile and friendliness can ease communication with locals and make your travel experience more pleasant."
+        }
+    ]
+}

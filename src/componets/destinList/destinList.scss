@@ -1,0 +1,11 @@
+.destinations_list {
+    padding: 70px 0;
+
+    .destinations_list_content {
+        display: flex;
+        justify-content: center;
+        gap: min(30px, 60px);
+        flex-wrap: wrap;
+    }
+}
+

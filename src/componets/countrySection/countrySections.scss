@@ -1,0 +1,49 @@
+
+
+.article_section {
+    padding: 70px 0;
+    position: relative;
+
+
+    .article_section_container {
+        position: relative;
+        &::before {
+            content: '';
+            border-top: 1px dashed coral;
+            position: absolute;
+            top: -70px;
+            left: 0;
+            right: 0;
+            width: 100%;
+
+            
+        }
+    }
+        
+
+    .country_section_content {
+        .country_section_img {
+           float: left;
+           width: 40%;
+           height: auto;
+           padding-right: 30px;
+           padding-bottom: 20px;
+
+           img{
+            width: 100%;
+            height: auto;  
+            object-position: center;
+            object-fit: cover;
+           }
+        }
+        .country_section_paragrahs {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+    }
+    .country_section_image_grid {
+        // width: 80%;
+        margin: 0 auto;
+    }
+   
+}

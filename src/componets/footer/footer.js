@@ -1,26 +1,27 @@
 import "./footer.scss";
 import logo from "../../assets/images/travel-logo.svg";
+import { Link } from "react-router-dom";
 
 const socialLinks = [
   {
     name: "Facebook",
     link: "https://www.facebook.com/",
-    icon: "/images/facebook_logo_icon.svg",
+    icon: "images/facebook_logo_icon.svg",
   },
   {
     name: "Instagram",
     link: "https://www.instagram.com/",
-    icon: "/images/instagram_logo_icon.svg",
+    icon: "images/instagram_logo_icon.svg",
   },
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/",
-    icon: "/images/linkedin_logo_icon.svg",
+    icon: "images/linkedin_logo_icon.svg",
   },
   {
     name: "GitHub",
     link: "https://github.com/",
-    icon: "/images/github_logo_icon.svg",
+    icon: "images/github_logo_icon.svg",
   },
 ];
 
@@ -30,23 +31,23 @@ function Footer() {
       <div className="container">
         <div className="footer_flex">
           <div className="logo_img">
-            <a href="/">
+            <Link to="/">
               <img src={logo} alt="logo" />
-            </a>
+            </Link>
           </div>
           <div className="footer_contacts">
             <h4>Contacts</h4>
             <ul className="footer_contacts_list">
               <li>
-                <a href="https://goo.gl/maps/KmjK55Z1t6yYQRsF9" target="_blank" rel="noreferrer">
+                <Link to="https://goo.gl/maps/KmjK55Z1t6yYQRsF9" target="_blank" rel="noreferrer">
                   Nikopol, Ukraine
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="tel:+380661234567">+380661234567</a>
+                <Link to="tel:+380661234567">+380661234567</Link>
               </li>
               <li>
-                <a href="mailto:wilena0207@gmail.com">wilena0207@gmail.com</a>
+                <Link to="mailto:wilena0207@gmail.com">wilena0207@gmail.com</Link>
               </li>
             </ul>
           </div>
@@ -55,8 +56,8 @@ function Footer() {
             <ul className="footer_social_list">
               {socialLinks.map((social) => (
                 <li key={social.name} className="footer_social_list">
-                  <a
-                    href={social.link}
+                  <Link
+                    to={social.link}
                     className="social_link"
                     target="__blank"
                     rel="noreferrer"
@@ -64,7 +65,7 @@ function Footer() {
                       mask: `url(${social.icon})`,
                       WebkitMask: `url(${social.icon})`,
                     }}
-                  ></a>
+                  ></Link>
                 </li>
               ))}
             </ul>
@@ -74,29 +75,29 @@ function Footer() {
             <nav className="footer_navigation">
               <ul className="footer_nav_list">
                 <li className="footer_nav_li">
-                  <a className="menu_nav_a" href="/">
+                  <Link className="menu_nav_a" to="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer_nav_li">
-                  <a className="footer_nav_a" href="/destinations">
+                  <Link className="footer_nav_a" to="/destinations">
                     Destinations
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer_nav_li">
-                  <a className="footer_nav_a" href="/gallery">
+                  <Link className="footer_nav_a" to="/gallery">
                     My gallery
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer_nav_li">
-                  <a className="footer_nav_a" href="/about">
+                  <Link className="footer_nav_a" to="/about">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer_nav_li">
-                  <a className="footer_nav_a" href="/contacts">
+                  <Link className="footer_nav_a" to="/contacts">
                     Contacts
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
