@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './error404.scss'
 
 function Error404() {
@@ -780,6 +781,9 @@ function Error404() {
 				<div className="error_message">
 					<h2 className="error_title montserat_text">Not found</h2>
 					<p className="error_message_text montserat_text">Page that you are looking does not exist</p>
+					<div className="home_button monserrat_text">
+						<Link to="/">Go Home</Link>
+					</div>
 				</div>
 			</div>
 		</div>

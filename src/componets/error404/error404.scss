@@ -85,12 +85,37 @@ svg#freepik_stories-404-error.animated
         letter-spacing: 0.05em;
         color: coral;
       }
+
+      .home_button a {
+        padding: 15px 30px;
+        font-weight: 500;
+        font-size: 20px;
+        color: coral;
+        border: 2px solid coral;
+        &:hover {
+            background-color: coral;
+            border-color: coral;
+            color: white;
+            animation: btnColorChange 400ms ease-in-out forwards;
+        }
+    }
     }
   }
   .black_bg{
     height: 90px;
     background-color: #070707;
     width: 100%;
+  }
+}
+
+@keyframes btnColorChange {
+  from {
+    background-color: transparent;
+    color: coral;
+  }
+  to {
+    background-color: coral;
+    color: white;
   }
 }
 
