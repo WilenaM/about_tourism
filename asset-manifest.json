@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/about_tourism/static/css/main.c66d0199.css",
-    "main.js": "/about_tourism/static/js/main.74ab70c1.js",
+    "main.css": "/about_tourism/static/css/main.4bb0d9f5.css",
+    "main.js": "/about_tourism/static/js/main.81b1e5e0.js",
     "static/media/jerusalem.jpg": "/about_tourism/static/media/jerusalem.a9acd27c9d2b193b7f9e.jpg",
     "static/media/globys.jpg": "/about_tourism/static/media/globys.e4e446196bd6aa993c20.jpg",
     "static/media/brugge.jpg": "/about_tourism/static/media/brugge.285401fb1c36c4f160ff.jpg",
@@ -33,11 +33,11 @@
     "static/media/revicons.ttf": "/about_tourism/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/about_tourism/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/about_tourism/index.html",
-    "main.c66d0199.css.map": "/about_tourism/static/css/main.c66d0199.css.map",
-    "main.74ab70c1.js.map": "/about_tourism/static/js/main.74ab70c1.js.map"
+    "main.4bb0d9f5.css.map": "/about_tourism/static/css/main.4bb0d9f5.css.map",
+    "main.81b1e5e0.js.map": "/about_tourism/static/js/main.81b1e5e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.c66d0199.css",
-    "static/js/main.74ab70c1.js"
+    "static/css/main.4bb0d9f5.css",
+    "static/js/main.81b1e5e0.js"
   ]
 }

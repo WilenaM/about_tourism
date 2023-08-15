@@ -1,0 +1,59 @@
+{
+    "heading": {
+        
+            "img": "images/kompas.jpg",
+            "title": "Destinations",
+            "caption": "This is a world travel blog featuring beautiful destinations, new experiences, and hidden places around the world."
+          
+    },
+    "destinations":[
+        {
+         "id": "europe",
+         "title": "Europe",
+         "cards": [
+          {
+           "img": "images/firenze.jpg",
+           "title": "Italy",
+           "description":
+            "The href attribute is required for an anchor to be keyboard accessible...",
+           "link": "/destinations/italy"
+          },
+          {
+           "img": "images/brugge.jpg",
+           "title": "Belgium",
+           "description":
+            "The href attribute is required for an anchor to be keyboard accessible...",
+           "link": "/destinations/belgium"
+          },
+       
+          {
+           "img": "images/berlin.jpg",
+           "title": "Germany",
+           "description":
+            "The href attribute is required for an anchor to be keyboard accessible...",
+           "link": "/destinations/germany"
+          }]
+        },
+        {
+         "id": "middle-east",
+         "title": "Middle East",
+         "cards": [{
+          "img": "images/jerusalem.jpg",
+          "title": "Israel",
+          "description":
+           "The href attribute is required for an anchor to be keyboard accessible...",
+          "link": "/destinations/israel"
+         }]
+        },
+        {
+         "id": "africa",
+         "title": "Africa",
+         "cards": []
+        },
+        {
+         "id": "north-america",
+         "title": "North America",
+         "cards": []
+        }
+       ] 
+}
