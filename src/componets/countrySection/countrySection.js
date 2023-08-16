@@ -1,8 +1,5 @@
 import "./countrySections.scss";
 import ImageGrid from "../imageGrid/indexGrid";
-import { useEffect } from "react";
-
-
 
 
 function CountrySection({ id, title, mainImg, paragraphs, gridImages }) {

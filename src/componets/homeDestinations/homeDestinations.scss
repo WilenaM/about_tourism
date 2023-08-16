@@ -7,42 +7,6 @@
     position: relative;
   }
 
-//   h2 {
-//     text-align: center;
-//     margin-bottom: 50px;
-//     font-weight: bold;
-//     text-transform: uppercase;
-
-//     position: relative;
-//     display: table;
-//     width: auto;
-//     margin: 0 auto 45px;
-//     letter-spacing: 2px;
-
-//     &::before {
-//       content: "";
-//       position: absolute;
-//       top: -50%;
-//       left: -25px;
-//       width: 30px;
-//       height: 20px;
-//       border-top: 2px solid coral;
-//       border-left: 2px solid coral;
-//     }
-
-//     &:after {
-//         content: "";
-//         position: absolute;
-//         bottom: -50%;
-//         right: -25px;
-//         width: 30px;
-//         height: 20px;
-//         border-bottom: 2px solid coral;
-//         border-right: 2px solid coral;
-//       }
-    
-//   }
-
 .desc_destin {
     font-size: 20px;
     text-align: center;
@@ -53,11 +17,6 @@
     color: #1e1e1e;
 }
 
-  // .home_destinations_list {
-  //     // display: flex;
-  //     // justify-content: space-between;
-
-  // }
   .home_destinations_li {
     display: flex;
     justify-content: center;

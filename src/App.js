@@ -1,4 +1,3 @@
-import "./App.css";
 import DefaultLayout from "./layouts/default";
 import Destinations from "./pages/destinations";
 import Home from "./pages/home";
@@ -17,9 +16,7 @@ function App() {
         <Route path="/" element={<DefaultLayout/>}>
           <Route index element={<Home/>}/>
           <Route path="destinations" element={<Destinations/>}/>
-          <Route path="destinations/italy" element={<Country countryName="italy"/>}/>
-          <Route path="destinations/israel" element={<Country countryName="israel"/>}/>
-          <Route path="destinations/germany" element={<Country countryName="germany"/>}/>
+          <Route path="destinations/:countryName" element={<Country />}/>
           <Route path="gallery" element={<Gallerys/>}/>
           <Route path="about" element={<AboutSito/>}/>
           <Route path="contacts" element={<Contacts/>}/>

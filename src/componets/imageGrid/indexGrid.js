@@ -10,9 +10,8 @@ function ImageGrid(props) {
             props.images.map((image, index) => (
                 <div key={index}
                  className='grid_img_item'
-                  style={{gridColumn: image.gridWidth || '', gridRow: image.gridHeight || ''}} 
-                  onClick = {props.click || '' }>
-                    <img data-id={index} src={image.src || image.original} alt={image.alt} ></img>
+                  style={{gridColumn: image.gridWidth || '', gridRow: image.gridHeight || ''}}>
+                    <img data-id={index} src={image.src} alt={image.alt} ></img>
                 </div>
             ))
         }  

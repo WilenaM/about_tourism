@@ -1,7 +1,4 @@
 import "./homeDestinations.scss";
-import italyImage from "../../assets/images/firenze.jpg";
-import israelImage from "../../assets/images/jerusalem.jpg";
-import belgiumImage from "../../assets/images/brugge.jpg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import DestinCard from "../destinCard/destinCard";

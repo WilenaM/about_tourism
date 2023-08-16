@@ -2,7 +2,6 @@
 import "./gallerys.scss";
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/scss/image-gallery.scss";
-import { useState } from "react";
 
 function Gallery({ images }) {
 
